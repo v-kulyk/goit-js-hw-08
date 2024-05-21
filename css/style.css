@@ -1,0 +1,24 @@
+ul {
+  max-width: 100%;
+  width: 1128px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+li {
+  width: calc((100% - 48px) / 3);
+}
+li img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+li img:hover {
+  transform: scale(1.044);
+}
